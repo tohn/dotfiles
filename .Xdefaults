@@ -1,0 +1,151 @@
+# Urxvt settings:
+# von http://gear1924.wordpress.com/2009/09/28/tabs-mit-urxvt/
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.foreground: gray
+URxvt.background: black
+! for screen
+URxvt.secondaryScroll: true
+
+! make links clickable
+URxvt.perl-ext-common: default,matcher
+#URxvt.urlLauncher: chromium-browser
+URxvt.urlLauncher: chromium
+#URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+#URxvt.perl-ext-common: mark-urls
+#URxvt.urlLauncher: firefox
+
+! tabbed
+Urxvt.tabbed: true
+URxvt.tabbed.saveLines: 10000
+#URxvt.tabbed.scrollBar: true
+URxvt.tabbed.tabbar-fg: 3
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 0
+URxvt.tabbed.tab-bg: 1
+#URxvt.tabbed.secondaryScroll: true
+#URxvt.tabbed.perl-ext-common: mark-urls
+#URxvt.tabbed.urlLauncher: firefox 
+
+! real transparency
+#URxvt.inheritPixmap: true
+#URxvt.tintColor: red
+#URxvt.shading: 20
+
+# aus http://ubuntuforums.org/showpost.php?s=3f4e8ac13dc9bc14c794b31da9fef7bd&p=3986762&postcount=3
+!URxvt settings
+#urxvt*font: 		xft:Bitstream Vera Sans Mono:pixelsize=9
+#URxvt*boldFont:		xft:Bitstream Vera Sans Mono:pixelsize=9
+#URxvt*italicFont:	xft:segoe ui:pixelsize=9
+#URxvt*bolditalicFont:	xft:Bitstream Vera Sans Mono:pixelsize=9
+#URxvt*scrollBar:	false
+#URxvt*internalBorder:	6
+
+!URxvt.background:	#333333
+#URxvt.foreground:	#ffffff
+!URxvt.termName:           string
+!URxvt.geometry:           128x64
+!URxvt.reverseVideo:       boolean
+!URxvt.loginShell:         boolean
+!URxvt.jumpScroll:         boolean
+!URxvt.skipScroll:         boolean
+!URxvt.pastableTabs:       boolean
+!URxvt.scrollstyle:        mode
+!URxvt.scrollBar_right:    boolean
+!URxvt.scrollBar_floating: boolean
+!URxvt.scrollBar_align:    mode
+!URxvt.thickness:          number
+!URxvt.scrollTtyOutput:    boolean
+!URxvt.scrollTtyKeypress:  boolean
+!URxvt.scrollWithBuffer:   boolean
+#URxvt.inheritPixmap:      true
+#URxvt.transparent:        true
+!URxvt.tintColor:          #333333
+#URxvt.shading:            30
+!URxvt.fading:             50
+!URxvt.fadeColor:          #222222
+!URxvt.utmpInhibit:        boolean
+#URxvt.urgentOnBell:       true
+!URxvt.visualBell:         boolean
+!URxvt.mapAlert:           boolean
+!URxvt.meta8:              boolean
+URxvt.mouseWheelScrollPage:   True
+!URxvt.tripleclickwords:   boolean
+!URxvt.insecure:           boolean
+!URxvt.cursorUnderline:    boolean
+URxvt.cursorBlink:        true
+!URxvt.pointerBlank:       boolean
+!URxvt.colorBD:            color
+!URxvt.colorIT:            color
+!URxvt.colorUL:            color
+!URxvt.colorRV:            color
+!URxvt.underlineColor:     color
+!URxvt.scrollColor:        color
+!URxvt.troughColor:        color
+!URxvt.highlightColor:     color
+#URxvt.cursorColor:        #afc81c
+!URxvt.cursorColor2:       color
+#URxvt.pointerColor:       #afc81c
+!URxvt.pointerColor2:      color
+!URxvt.borderColor:        color
+!URxvt.intensityStyles:    boolean
+!URxvt.inputMethod:        name
+!URxvt.preeditType:        style
+!URxvt.imLocale:           string
+!URxvt.imFont:             fontname
+!URxvt.title:               URxvt
+!URxvt.iconName:           string
+!URxvt.saveLines:          number
+!URxvt.depth:              number
+!URxvt.transient-for:      windowid
+!URxvt.override-redirect:  boolean
+!URxvt.hold:               boolean
+!URxvt.externalBorder:     number
+!URxvt.internalBorder:     number
+#URxvt.borderLess:         true
+!URxvt.skipBuiltinGlyphs:  boolean
+!URxvt.lineSpace:          number
+!URxvt.pointerBlankDelay:  number
+!URxvt.backspacekey:       string
+!URxvt.deletekey:          string
+!URxvt.selectstyle:        mode
+!URxvt.print-pipe:         string
+!URxvt.modifier:           modifier
+!URxvt.cutchars:           string
+!URxvt.answerbackString:   string
+!URxvt.secondaryScreen:    boolean
+!URxvt.secondaryScroll:    boolean
+!URxvt.perl-lib:           string
+!URxvt.perl-eval:          perl-eval
+!URxvt.perl-ext-common:    string
+!URxvt.perl-ext:           string
+!URxvt.iso14755_52:        boolean
+!URxvt*keysym.sym:         keysym
+
+
+# Colors (http://blog.holloway-web.de/2009/11/10/urxvt-farblich-das-tanzen-mit-tango-beibringen/)
+URxvt.color0: #2e3436
+URxvt.color1: #cc0000
+URxvt.color2: #73d126
+URxvt.color3: #8f5902
+URxvt.color4: #204a87
+URxvt.color5: #75507b
+URxvt.color6: #729fcf
+URxvt.color7: #d3d7cf
+URxvt.color8: #555753
+URxvt.color9: #ef2929
+URxvt.color10: #8ae234
+URxvt.color11: #fce94f
+URxvt.color12: #3465a4
+URxvt.color13: #ad7fa8
+URxvt.color14: #92bfef
+
+# https://github.com/Feh/urxvt-scripts
+#URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
+#URxvt.reverseVideo: true
+URxvt.underlineURLs: true
+URxvt.perl-lib: /home/benjo/.urxvt/
+URxvt.perl-ext: selection,mark-yank-urls,tabbed
+#URxvt.perl-ext: selection,tabbed
