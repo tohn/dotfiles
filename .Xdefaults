@@ -28,9 +28,9 @@ URxvt.tabbed.tab-bg: 1
 #URxvt.tabbed.urlLauncher: firefox 
 
 ! real transparency
-#URxvt.inheritPixmap: true
-#URxvt.tintColor: red
-#URxvt.shading: 20
+URxvt.inheritPixmap: true
+URxvt.tintColor: red
+URxvt.shading: 20
 
 # aus http://ubuntuforums.org/showpost.php?s=3f4e8ac13dc9bc14c794b31da9fef7bd&p=3986762&postcount=3
 !URxvt settings
@@ -89,9 +89,9 @@ URxvt.cursorBlink:        true
 !URxvt.pointerColor2:      color
 !URxvt.borderColor:        color
 !URxvt.intensityStyles:    boolean
-!URxvt.inputMethod:        name
-!URxvt.preeditType:        style
-!URxvt.imLocale:           string
+URxvt.inputMethod:        ibus
+URxvt.preeditType:        OnTheSpot,None
+URxvt.imLocale:           ja_JP.UTF-8
 !URxvt.imFont:             fontname
 !URxvt.title:               URxvt
 !URxvt.iconName:           string
@@ -144,6 +144,6 @@ URxvt.color14: #92bfef
 #URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
 #URxvt.reverseVideo: true
 URxvt.underlineURLs: true
-URxvt.perl-lib: /home/benjo/.urxvt/
-URxvt.perl-ext: selection,mark-yank-urls,tabbed
-#URxvt.perl-ext: selection,tabbed
+URxvt.perl-lib: $HOME/.urxvt/
+#URxvt.perl-ext: selection,mark-yank-urls,tabbed
+URxvt.perl-ext: selection,tabbed
