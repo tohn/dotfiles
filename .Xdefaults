@@ -145,5 +145,5 @@ URxvt.color14: #92bfef
 #URxvt.reverseVideo: true
 URxvt.underlineURLs: true
 URxvt.perl-lib: /home/benjo/.urxvt/
-URxvt.perl-ext: selection,mark-yank-urls,tabbed
-#URxvt.perl-ext: selection,tabbed
+#URxvt.perl-ext: selection,mark-yank-urls,tabbed
+URxvt.perl-ext: selection,tabbed

@@ -52,12 +52,12 @@ wmiir write /colrules <<!
 
 # Tagging Rules
 wmiir write /tagrules <<!
-/MPlayer|VLC/ -> ~
 /Chromium.*/ -> 3
 /Thunderbird.*/ -> 2
 /Gimp.*/ -> ~+gimp
 /Pidgin.*/ -> 4
 !
+#/MPlayer|VLC/ -> ~
 
 # Status Bar Info
 status() {

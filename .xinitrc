@@ -12,4 +12,5 @@ if [[ ! -d $HOME/logs ]] ; then
 fi
 wmiilogdate="$HOME/logs/`date +%Y%m%d-%H%M%S`.wmii.log"
 #exec wmii >${wmiilogdate} 2>&1
-exec ck-launch-session gnome-session
+exec wmii
+#exec ck-launch-session gnome-session
