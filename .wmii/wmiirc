@@ -54,16 +54,16 @@ wmiir write /colrules <<!
 wmiir write /tagrules <<!
 /Chromium.*/ -> 3
 /Thunderbird.*/ -> 2
-/Gimp.*/ -> ~+gimp
+/Gimp.*/ -> ~
 /Pidgin.*/ -> 4
 !
 #/MPlayer|VLC/ -> ~
 
 # Status Bar Info
 status() {
-#	echo -n $(uptime | sed 's/.*://; s/,//g') '|' $(date)
+	echo -n $(uptime | sed 's/.*://; s/,//g') '|' $(date)
 	#echo -n ' Wlan0:' $(iwconfig wlan0 | sed 's/ /\n/g' | grep Quality) '|' $(acpi -b | sed 's/.*, \{0,2\}\([0-9]\{1,3\}%\),.*/Bat: \1 | /') ' Core MHz:' $(cat /proc/cpuinfo | grep 'cpu MHz' | sed 's/.*: //g; s/\..*//g;') '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
-	echo -n $(acpi -b | sed 's/.*, \{0,2\}\([0-9]\{1,3\}%\),.*/Bat: \1 | /') '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
+#	echo -n $(acpi -b | sed 's/.*, \{0,2\}\([0-9]\{1,3\}%\),.*/Bat: \1 | /') '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
 }
 
 local_events() { true;}
@@ -239,6 +239,16 @@ Key $MODKEY-$i		 # Move to the numbered view
 	wmiir xwrite /ctl view "$i"
 Key $MODKEY-Shift-$i     # Retag selected client with the numbered tag
 	wmiir xwrite /client/sel/tags "$i"
+
+KeyGroup Self
+Key $MODKEY-F7
+	cmus-remote -p
+Key $MODKEY-F8
+	cmus-remote -u
+Key $MODKEY-F9
+	cmus-remote -n
+Key $MODKEY-XF86Tools
+	scrot -d 3 -q 100 '%F_%T_$wx$h.png'
 !
 	done
 }
