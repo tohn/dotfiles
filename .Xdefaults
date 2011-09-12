@@ -32,6 +32,9 @@ URxvt.inheritPixmap: true
 URxvt.tintColor: red
 URxvt.shading: 20
 
+# beep
+Urxvt.urgentOnBell: False
+
 # aus http://ubuntuforums.org/showpost.php?s=3f4e8ac13dc9bc14c794b31da9fef7bd&p=3986762&postcount=3
 !URxvt settings
 #urxvt*font: 		xft:Bitstream Vera Sans Mono:pixelsize=9
