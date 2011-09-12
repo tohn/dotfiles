@@ -16,6 +16,12 @@ xset s off
 # disable beep
 xset b off
 
+# transparency
+xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &
+
+# disable touchpad
+xinput set-int-prop "SynPS/2 Synaptics TouchPad" "Synaptics Off" 8 1
+
 # wmii
 #wmiilogdate="$HOME/logs/`date +%Y%m%d-%H%M%S`.wmii.log"
 exec wmii
