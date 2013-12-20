@@ -1,7 +1,0 @@
-Dotfiles
-by Yannic Haupenthal
-
-This repos contains some other dotfiles, i.e. my .wmii/wmiirc.
-
-To link one or all files to your home, execute:
-install.sh
